@@ -8,6 +8,5 @@ export default function App({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <Script src="https://cdn.splitbee.io/sb.js" />
     </>
-    // <script async src=""></script>
   );
 }
