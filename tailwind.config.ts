@@ -30,6 +30,7 @@ module.exports = {
       bgon: "#0d0d13",
       hgin: "#0e1435",
       nuic: "#474b64",
+      purple: "#7148FC",
       btnbghover: "#5b38cb",
       headerbc: "#e5e7ea",
       blackmid: "#1c1e21",
@@ -40,7 +41,7 @@ module.exports = {
       textmidgrey: "#b6b6b6",
       cardbg: "#141518",
       textbg: "#1c1e20",
-      midgrey: "#8a8a8b"
+      midgrey: "#8a8a8b",
     },
     fontFamily: {
       Nunito: "Nunito, sans-serif",

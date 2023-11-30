@@ -12,7 +12,9 @@ import {
   FolderSearch2,
   BellRing,
   ImagePlus,
-  Timer,
+  Github,
+  Share2,
+  ExternalLink as ExtLink,
 } from "lucide-react";
 
 import {
@@ -107,20 +109,20 @@ export default function Home() {
             <nav className="hidden items-center gap-6 md:flex lg:flex">
               <Link
                 href=""
-                className="text-white transition-colors hover:text-orange font-normal text-lg"
+                className="text-white transition-colors hover:text-purple font-normal text-lg"
               >
                 Overview
               </Link>
               <Link
                 href="#features"
-                className="text-white transition-colors hover:text-orange font-normal text-lg"
+                className="text-white transition-colors hover:text-purple font-normal text-lg"
               >
                 Features
               </Link>
 
               <Link
                 href="#pricing"
-                className="text-white transition-colors hover:text-orange font-normal text-lg"
+                className="text-white transition-colors hover:text-purple font-normal text-lg"
               >
                 Pricing
               </Link>
@@ -128,7 +130,7 @@ export default function Home() {
           </div>
           <div className="hidden md:block lg:block">
             <Link href="https://stashblob.vercel.app/" target="_blank">
-              <Button className="bg-[#ff8708] text-white hover:bg-[#ee6008] scale-100 transition-all hover:scale-95 text-lg font-normal p-6">
+              <Button className="bg-purple text-white hover:bg-btnbghover scale-100 transition-all hover:scale-95 text-lg font-medium p-6">
                 Start Sharing
               </Button>
             </Link>
@@ -138,18 +140,32 @@ export default function Home() {
               <SheetTrigger asChild>
                 <Menu className="w-12 h-12 text-white" />
               </SheetTrigger>
-              <SheetContent side={"left"} className="bg-bgon border border-r-white/20">
+              <SheetContent
+                side={"left"}
+                className="bg-bgon border border-r-white/20"
+              >
                 <SheetHeader>
-                  <SheetTitle className="text-white font-Nunito text-2xl">StashBlob</SheetTitle>
+                  <SheetTitle className="text-white font-Nunito text-2xl">
+                    StashBlob
+                  </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col gap-8 mt-10">
-                  <Link href="/" className="text-xl font-medium font-Nunito text-white">
+                  <Link
+                    href="/"
+                    className="text-xl font-medium font-Nunito text-white"
+                  >
                     Overview
                   </Link>
-                  <Link href="#features" className="text-xl font-medium font-Nunito text-white">
+                  <Link
+                    href="#features"
+                    className="text-xl font-medium font-Nunito text-white"
+                  >
                     Features
                   </Link>
-                  <Link href="#pricing" className="text-xl font-medium font-Nunito text-white">
+                  <Link
+                    href="#pricing"
+                    className="text-xl font-medium font-Nunito text-white"
+                  >
                     Pricing
                   </Link>
                 </nav>
@@ -165,7 +181,7 @@ export default function Home() {
             <hgroup className="flex flex-col gap-3">
               <h1 className="font-Nunito md:text-8xl lg:text-8xl text-6xl font-[900] text-white">
                 The Cloud That{" "}
-                <span className="bg-orange text-boxicard rounded-md">
+                <span className="bg-[#ac94fd] text-boxicard rounded-md">
                   Cares
                 </span>{" "}
                 About Your File
@@ -178,7 +194,7 @@ export default function Home() {
             </hgroup>
             <div className="">
               <Link href="https://stashblob.vercel.app/" target="_blank">
-                <Button className="bg-orange w-full text-white text-lg font-Nunito p-7 font-bold hover:bg-orahov scale-100 transition-all hover:scale-95">
+                <Button className="bg-purple w-full text-white text-lg font-Nunito p-7 font-bold hover:bg-btnbghover scale-100 transition-all hover:scale-95">
                   Start Sharing
                 </Button>
               </Link>
@@ -189,7 +205,7 @@ export default function Home() {
                 autoPlay
                 muted
                 loop
-                className="x w-full max-w-7xl rounded-2xl shadow-lg backdrop-blur-md shadow-orange/30"
+                className="x w-full max-w-7xl rounded-2xl shadow-lg backdrop-blur-md shadow-purple/30 border border-purple"
                 controls={false}
               ></video>
             </div>
@@ -212,8 +228,8 @@ export default function Home() {
                 <div id="list">
                   <hgroup className="flex flex-col gap-14">
                     <div id="heading_g" className="flex items-center gap-5">
-                      <span className="p-4 bg-gradient-to-r from-midwhite/20 to-white/30 border border-white/30 rounded-md">
-                        <Zap className="x w-8 h-8 text-orange" />
+                      <span className="p-4 bg-gradient-to-r from-purple to-btnbghover border border-purple rounded-md">
+                        <Zap className="w-8 h-8 text-white" />
                       </span>
                       <div id="empty" className="flex flex-col gap-2">
                         <h4 className="text-white font-Nunito text-2xl font-bold">
@@ -227,8 +243,8 @@ export default function Home() {
                       </div>
                     </div>
                     <div id="heading_g" className="flex items-center gap-5">
-                      <span className="p-4 bg-gradient-to-r from-midwhite/20 to-white/30 border border-white/30 rounded-md">
-                        <ShieldCheck className="x w-8 h-8 text-orange" />
+                      <span className="p-4 bg-gradient-to-r from-purple to-btnbghover border border-purple rounded-md">
+                        <ShieldCheck className="w-8 h-8 text-white" />
                       </span>
                       <div id="empty" className="flex flex-col gap-2">
                         <h4 className="text-white font-Nunito text-2xl font-bold">
@@ -242,8 +258,8 @@ export default function Home() {
                       </div>
                     </div>
                     <div id="heading_g" className="flex items-center gap-5">
-                      <span className="p-4 bg-gradient-to-r from-midwhite/20 to-white/30 border border-white/30 rounded-md">
-                        <FolderSearch2 className="x w-8 h-8 text-orange" />
+                      <span className="p-4 bg-gradient-to-r from-purple to-btnbghover border border-purple rounded-md">
+                        <FolderSearch2 className="w-8 h-8 text-white" />
                       </span>
                       <div id="empty" className="flex flex-col gap-2">
                         <h4 className="text-white font-Nunito text-2xl font-bold">
@@ -257,8 +273,8 @@ export default function Home() {
                       </div>
                     </div>
                     <div id="heading_g" className="flex items-center gap-5">
-                      <span className="p-4 bg-gradient-to-r from-midwhite/20 to-white/30 border border-white/30 rounded-md">
-                        <BellRing className="x w-8 h-8 text-orange" />
+                      <span className="p-4 bg-gradient-to-r from-purple to-btnbghover border border-purple rounded-md">
+                        <BellRing className="w-8 h-8 text-white" />
                       </span>
                       <div id="empty" className="flex flex-col gap-2">
                         <h4 className="text-white font-Nunito text-2xl font-bold">
@@ -294,8 +310,8 @@ export default function Home() {
                 <div id="list">
                   <hgroup className="flex flex-col gap-14">
                     <div id="heading_g" className="flex items-center gap-5">
-                      <span className="p-4 bg-gradient-to-r from-midwhite/20 to-white/30 border border-white/30 rounded-md">
-                        <Zap className="x w-8 h-8 text-orange" />
+                      <span className="p-4 bg-gradient-to-r from-purple to-btnbghover border border-purple rounded-md">
+                        <Zap className="w-8 h-8 text-white" />
                       </span>
                       <div id="empty" className="flex flex-col gap-2">
                         <h4 className="text-white font-Nunito text-2xl font-bold">
@@ -310,8 +326,8 @@ export default function Home() {
                       </div>
                     </div>
                     <div id="heading_g" className="flex items-center gap-5">
-                      <span className="p-4 bg-gradient-to-r from-midwhite/20 to-white/30 border border-white/30 rounded-md">
-                        <ImagePlus className="x w-8 h-8 text-orange" />
+                      <span className="p-4 bg-gradient-to-r from-purple to-btnbghover border border-purple rounded-md">
+                        <ImagePlus className="w-8 h-8 text-white" />
                       </span>
                       <div id="empty" className="flex flex-col gap-2">
                         <h4 className="text-white font-Nunito text-2xl font-bold">
@@ -324,33 +340,18 @@ export default function Home() {
                         </span>
                       </div>
                     </div>
+
                     <div id="heading_g" className="flex items-center gap-5">
-                      <span className="p-4 bg-gradient-to-r from-midwhite/20 to-white/30 border border-white/30 rounded-md">
-                        <FolderSearch2 className="x w-8 h-8 text-orange" />
+                      <span className="p-4 bg-gradient-to-r from-purple to-btnbghover border border-purple rounded-md">
+                        <Share2 className="w-8 h-8 text-white" />
                       </span>
                       <div id="empty" className="flex flex-col gap-2">
                         <h4 className="text-white font-Nunito text-2xl font-bold">
-                          Fast Search
+                          Easy Sharing
                         </h4>
                         <span className="text-white">
-                          Searching for a file is pretty fast, we&apos;re
-                          talking 100x faster than other <br /> cloud storage
-                          services like: Google Drive.
-                        </span>
-                      </div>
-                    </div>
-                    <div id="heading_g" className="flex items-center gap-5">
-                      <span className="p-4 bg-gradient-to-r from-midwhite/20 to-white/30 border border-white/30 rounded-md">
-                        <Timer className="x w-8 h-8 text-orange" />
-                      </span>
-                      <div id="empty" className="flex flex-col gap-2">
-                        <h4 className="text-white font-Nunito text-2xl font-bold">
-                          TimedShare
-                        </h4>
-                        <span className="text-white">
-                          We recently integrated timed-share, this allows users
-                          with a basic <br /> subscription to share a file for
-                          1min, after 1min the link gets destroyed.
+                          Share fies with anyone publicly is easy, Its just a
+                          click away. Get sharing now!
                         </span>
                       </div>
                     </div>
@@ -359,16 +360,30 @@ export default function Home() {
               </hgroup>
             </div>
           </section>
-          <section id="owner-writeup">
+          <section
+            id="owner-writeup"
+            className="flex flex-col items-center justify-center text-center gap-5"
+          >
             <hgroup className="flex items-center justify-center gap-5 flex-col text-center">
               <h2 className="md:text-6xl lg:text-6xl text-4xl font-Nunito font-bold text-white">
-                <span className="text-orange">Passion</span> led us here
+                <span className="text-purple">Passion</span> led us here
               </h2>
               <p className="text-doubleAgrey font-medium font-Nunito md:text-lg lg:text-lg text-base">
                 We’re open-source, the main app itself is open-source so you can
                 play around and see how we do stuff.
               </p>
             </hgroup>
+            <div id="btn-github">
+              <Link
+                href="https://github.com/creative-tutorials/stashblob"
+                target="_blank"
+              >
+                <Button className="bg-purple w-full text-white text-lg font-Nunito p-7 font-bold hover:bg-btnbghover scale-100 transition-all hover:scale-95 flex items-center gap-2">
+                  <Github />
+                  Check Out Our GitHub Repo
+                </Button>
+              </Link>
+            </div>
           </section>
           <section
             id="tesimonials"
@@ -388,8 +403,9 @@ export default function Home() {
                 href="https://twitter.com/timi_networks/status/1724408277776093287"
                 target="_blank"
               >
-                <Button className="bg-orange w-full text-white text-lg font-Nunito p-7 font-bold hover:bg-orahov scale-100 transition-all hover:scale-95">
+                <Button className="bg-purple w-full text-white text-lg font-Nunito p-7 font-bold hover:bg-btnbghover scale-100 transition-all hover:scale-95 flex items-center gap-2">
                   Add Testimonial
+                  <ExtLink />
                 </Button>
               </Link>
             </div>
@@ -408,7 +424,7 @@ export default function Home() {
               </p>
             </hgroup>
             <section className="flex md:flex-row lg:flex-row flex-col gap-5 items-stretch mt-8">
-              <div className="flex flex-col gap-6 w-full rounded-lg bg-gradient-to-r from-bgon to-midwhite/5 border border-white/20 shadow-lg p-8">
+              <div className="flex flex-col gap-6 w-full rounded-3xl bg-gradient-to-r from-bgon to-midwhite/5 border border-white/20 shadow-lg p-8">
                 <hgroup className="flex flex-col gap-2">
                   <h3 className="x font-medium text-3xl font-Nunito text-white">
                     Basic
@@ -425,43 +441,50 @@ export default function Home() {
                     </span>
                   </h2>
                 </hgroup>
-                <hgroup>
-                  <span className="x text-doubleAgrey font-Nunito font-medium">
-                    Get started with:
-                  </span>
-                </hgroup>
-                <hgroup className="mt-10 flex flex-col gap-5">
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> 2GB Cloud Storage
-                  </p>
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> Image Optimization
-                  </p>
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> Send up to 50 emails
-                  </p>
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> 1min File Sharing TimeOut
-                  </p>
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> Community support
-                  </p>
-                </hgroup>
-                <div className="flex items-center justify-center m-auto w-full">
+                <div className="flex items-center justify-center w-full">
                   <Link
                     href="https://stashblob.vercel.app/"
                     className="w-full"
                     target="_blank"
                   >
-                    <Button className="w-full p-7 text-lg font-Nunito font-bold bg-orange hover:bg-orahov text-white scale-100 transition-all hover:scale-95">
+                    <Button className="w-full p-7 text-lg font-Nunito font-bold bg-purple hover:bg-btnbghover text-white scale-100 transition-all hover:scale-95">
                       Get Started
                     </Button>
                   </Link>
                 </div>
+                <hgroup>
+                  <span className="x text-doubleAgrey font-Nunito font-medium">
+                    Get started with:
+                  </span>
+                </hgroup>
+                <hgroup className="mt-4 flex flex-col gap-5">
+                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
+                    <Check className="text-purple" /> 2GB Cloud Storage
+                  </p>
+                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
+                    <Check className="text-purple" /> Image Optimization
+                  </p>
+                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
+                    <Check className="text-purple" /> Send up to 50 emails
+                  </p>
+                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
+                    <Check className="text-purple" /> File Sharing
+                  </p>
+                </hgroup>
               </div>
-              <div className="flex flex-col gap-6 w-full rounded-lg bg-gradient-to-r from-bgon to-midwhite/5 border border-white/20 shadow-lg p-8">
+              <div className="flex flex-col gap-6 w-full rounded-3xl bg-gradient-to-r from-bgon to-midwhite/5 border-2 border-purple shadow-lg p-8 relative">
+                <div className="flex items-end justify-end">
+                  <span
+                    id="tag"
+                    className="text-center bg-[#d6cbff] rounded-full w-20 p-1 absolute top-10"
+                  >
+                    <p className="font-Nunito text-[#2b03b2] text-sm font-bold">
+                      Timi&apos;s Fav
+                    </p>
+                  </span>
+                </div>
                 <hgroup className="flex flex-col gap-2">
-                  <h3 className="x font-medium text-3xl font-Nunito text-white">
+                  <h3 className="font-medium text-3xl font-Nunito text-white">
                     Turbo
                   </h3>
                   <span className="text-lg text-doubleAgrey font-medium font-Nunito">
@@ -470,51 +493,48 @@ export default function Home() {
                 </hgroup>
                 <hgroup>
                   <h2 className="text-6xl font-bold font-Nunito text-white flex items-baseline">
-                    $19.99{" "}
+                    $10{" "}
                     <span className="text-base font-normal text-doubleAgrey">
                       /month
                     </span>
                   </h2>
                 </hgroup>
-                <hgroup>
-                  <span className="x text-doubleAgrey font-Nunito font-medium">
-                    Everything in basic plus:
-                  </span>
-                </hgroup>
-                <hgroup className="mt-10 flex flex-col gap-5">
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> 20GB Cloud Storage
-                  </p>
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> Video Optimization
-                  </p>
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> Fast Video Rendering
-                  </p>
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> Limited to 100
-                    File-Sharing <br /> per day
-                  </p>
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> Send up to 1K emails
-                  </p>
-                </hgroup>
-                <div className="flex items-center justify-center m-auto w-full">
+                <div className="flex items-center justify-center w-full">
                   <Link
                     href="https://timilab.lemonsqueezy.com/checkout/buy/47120f93-803e-435d-89bd-441482dca0e8"
                     className="w-full"
                     target="_blank"
                   >
-                    <Button className="w-full p-7 text-lg font-Nunito font-bold bg-orange hover:bg-orahov text-white scale-100 transition-all hover:scale-95">
-                      Get Started
+                    <Button className="w-full p-7 text-lg font-Nunito font-bold bg-purple hover:bg-btnbghover text-white scale-100 transition-all hover:scale-95">
+                      Upgrade now
                     </Button>
                   </Link>
                 </div>
+                <hgroup>
+                  <span className="x text-doubleAgrey font-Nunito font-medium">
+                    Everything in basic plus:
+                  </span>
+                </hgroup>
+                <hgroup className="mt-4 flex flex-col gap-5">
+                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
+                    <Check className="text-purple" /> 100GB Cloud Storage
+                  </p>
+
+                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
+                    <Check className="text-purple" /> Fast Video Rendering
+                  </p>
+                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
+                    <Check className="text-purple" /> Send up to 1K emails
+                  </p>
+                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
+                    <Check className="text-purple" /> Developer API
+                  </p>
+                </hgroup>
               </div>
-              <div className="flex flex-col gap-6 w-full rounded-lg bg-gradient-to-r from-bgon to-midwhite/5 border border-white/20 shadow-lg p-8">
+              <div className="flex flex-col gap-6 w-full rounded-3xl bg-gradient-to-r from-bgon to-midwhite/5 border border-white/20 shadow-lg p-8">
                 <hgroup className="flex flex-col gap-2">
                   <h3 className="x font-medium text-3xl font-Nunito text-white">
-                    Premium
+                    Unlimited
                   </h3>
                   <span className="text-lg text-doubleAgrey font-medium font-Nunito">
                     For Enterprise use
@@ -522,45 +542,39 @@ export default function Home() {
                 </hgroup>
                 <hgroup>
                   <h2 className="text-6xl font-bold font-Nunito text-white flex items-baseline">
-                    $39.99{" "}
-                    <span className="text-base font-normal text-doubleAgrey">
-                      /month
-                    </span>
+                    Custom{" "}
                   </h2>
                 </hgroup>
+                <div className="flex items-center justify-center w-full">
+                  <Link
+                    href="https://cal.com/timidev/stashblob"
+                    className="w-full"
+                    target="_blank"
+                  >
+                    <Button className="w-full p-7 text-lg font-Nunito font-bold bg-purple hover:bg-btnbghover text-white scale-100 transition-all hover:scale-95">
+                      Schedule call
+                    </Button>
+                  </Link>
+                </div>
                 <hgroup>
                   <span className="x text-doubleAgrey font-Nunito font-medium">
                     Everything in turbo plus:
                   </span>
                 </hgroup>
-                <hgroup className="mt-10 flex flex-col gap-5">
+                <hgroup className="mt-4 flex flex-col gap-5">
                   <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> 100GB Cloud Storage
+                    <Check className="text-purple" /> Unlimited storage
                   </p>
                   <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> Unlimited File-Sharing
+                    <Check className="text-purple" /> Backup drive
                   </p>
                   <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> Send up to 20K emails
+                    <Check className="text-purple" /> Send unlimited emails
                   </p>
                   <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> Faster response time
-                  </p>
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-orange" /> Developer API
+                    <Check className="text-purple" /> Team support
                   </p>
                 </hgroup>
-                <div className="flex items-center justify-center m-auto w-full">
-                  <Link
-                    href="https://timilab.lemonsqueezy.com/checkout/buy/47120f93-803e-435d-89bd-441482dca0e8"
-                    className="w-full"
-                    target="_blank"
-                  >
-                    <Button className="w-full p-7 text-lg font-Nunito font-bold bg-orange hover:bg-orahov text-white scale-100 transition-all hover:scale-95">
-                      Get Started
-                    </Button>
-                  </Link>
-                </div>
               </div>
             </section>
           </section>
@@ -571,12 +585,16 @@ export default function Home() {
             >
               <hgroup>
                 <h3 className="x font-Nunito md:text-5xl lg:text-5xl text-3xl font-bold text-white">
-                  Start Using Cloud That Can <span className="x bg-orange/70 p-3 rounded-lg">Carry You</span> Now!
+                  Start Using Cloud That Can{" "}
+                  <span className="x bg-purple/70 p-3 rounded-lg">
+                    Carry You
+                  </span>{" "}
+                  Now!
                 </h3>
               </hgroup>
               <div>
                 <Link href="https://stashblob.vercel.app/" target="_blank">
-                  <Button className="bg-orange hover:bg-orahov scale-100 transition-all hover:scale-95 font-Nunito p-8 font-bold md:text-2xl lg:text-2xl text-lg text-white">
+                  <Button className="bg-purple hover:bg-btnbghover scale-100 transition-all hover:scale-95 font-Nunito p-8 font-bold md:text-2xl lg:text-2xl text-lg text-white">
                     Get Started Now
                   </Button>
                 </Link>
@@ -587,7 +605,9 @@ export default function Home() {
         <footer className="bg-bgon p-10 shadow-lg border border-transparent border-t-white/25">
           <div className="flex gap-4">
             <hgroup>
-              <p className="text-lg font-Nunito font-medium text-white">Follow me on:</p>
+              <p className="text-lg font-Nunito font-medium text-white">
+                Follow me on:
+              </p>
             </hgroup>
             <div>
               <Link href="https://x.com/timi_networks" target="_blank">
