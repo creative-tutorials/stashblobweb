@@ -2,12 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  async redirects() {
+  async rewrites() {
     return [
       {
-        source: "/pricing",
-        destination: "/#pricing",
-        permanent: true,
+        source: "/docs",
+        destination: "https://timi.gitbook.io/stashblob-docs/",
       },
     ];
   },
