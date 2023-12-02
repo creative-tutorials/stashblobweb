@@ -59,7 +59,7 @@ export default function Pricing() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/derbreilm/image/upload/v1700076620/New_Site_Thumb_Graphics_aa9mki.jpg"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1700921113/Site_Rollup_pk7dop.jpg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -75,7 +75,7 @@ export default function Pricing() {
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/derbreilm/image/upload/v1700076620/New_Site_Thumb_Graphics_aa9mki.jpg"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1700921113/Site_Rollup_pk7dop.jpg"
         />
 
         <link
