@@ -41,6 +41,7 @@ module.exports = {
       textmidgrey: "#b6b6b6",
       cardbg: "#141518",
       textbg: "#1c1e20",
+      ledDark: "#111113",
       midgrey: "#8a8a8b",
     },
     fontFamily: {
