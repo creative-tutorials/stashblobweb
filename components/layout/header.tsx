@@ -29,6 +29,12 @@ export function Header() {
         >
           Docs
         </Link>
+        <Link
+          href="/blog"
+          className="text-white transition-colors hover:text-purple font-normal text-lg"
+        >
+          Blog
+        </Link>
       </nav>
       <div className="hidden md:block lg:block">
         <Link href="https://stashblob.vercel.app/" target="_blank">

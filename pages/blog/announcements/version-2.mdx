@@ -1,0 +1,139 @@
+---
+type: post
+title: Announcing StashBlob version 2
+description: A recent change was made to the way we upload, optimize and serve files, updates in UI is even better than before.
+author: Timi
+image: https://res.cloudinary.com/derbreilm/image/upload/v1700921113/Site_Rollup_pk7dop.jpg
+date: 2023-12-04
+---
+
+import Image from "next/image";
+import { Callout } from "nextra/components";
+import { Steps } from "nextra/components";
+
+<main>
+
+<div className="flex items-center justify-center">
+<div className="text-white p-4 font-Nunito flex justify-center flex-col gap-4" >
+
+# What's new in version 2?
+
+<Image
+  src="https://qhgpubnqzskccobolzai.supabase.co/storage/v1/object/public/meta/Site%20Rollup.jpg?t=2023-12-02T12%3A48%3A18.110Z"
+  width={800}
+  height={800}
+  alt="Blog Image"
+  className="w-full h-full rounded-lg"
+
+/>
+
+stashblob v2 was recently launched, I heard your complaints and your feedback loud and clear, and In this blog post, I will be announcing some key features that were added in version 2.
+
+### features
+
+- [Public File Sharing](#public-file-sharing)
+- [Account Mangement](#account-management)
+- [Folders](#folders)
+- [Theme Switcher](#theme-switcher)
+- [Command Box](#command-box)
+- [Request based billing](#request-based-billing)
+- [Developer API](#developer-api)
+- [File Upload Progress Bar](#file-upload-progress-bar)
+
+---
+
+## Public File Sharing
+
+In the initial build of stashblob, private file sharing was launched, making this the default setting. But so many requests were sent, asking for public file sharing, so after a few tweaking, I'm happy to announce public file sharing is now available.
+
+When you log into your stashblob account, you will be directed to your dashboard. In the list of files, you would see a _three-dot menu_, clicking on this would bring up a menu with three options. You should find the **Share** option in this menu.
+
+{" "}
+
+<Callout type="info">
+  You need to have an account and be logged in to share files.
+</Callout>
+
+---
+
+## Account Management
+
+Introducing a way to update, manage, and secure your account. Account Management gives you **100%** control over your account, with account management you can now Update, and Secure your account.
+
+---
+
+## Folders
+
+Folders are a great way to organize your files, and you can start creating folders right now on stashblob to start organizing your files.
+
+---
+
+## Theme Switcher
+
+Theme switcher is my favorite UI feature. It's as simple as A.B.C. To switch between `light` and `dark` mode. Here's a quick guide 👇
+
+<Steps>
+### Step 1
+ 
+Click the command icon `⌘`, a modal should pop up.
+
+### Step 2
+
+Click on settings
+
+### Step 2
+
+Boom! 💥 choose your mode
+
+</Steps>
+
+## Command Box
+
+Instead of using a sidebar for navigating through pages, I've added a command box, It's a great way to navigate around the app, because it gives you that native app feeling.
+
+![Command Box Gif](https://cmd)
+
+## Request based billing
+
+An update has been made to our pricing model, stashblob `Turbo` is now offered at **$10/month** for `100GB` of storage, and with this, we had to move from file-size-based billing to request-based billing. This simply means that you will be charged for the number of requests you make, and not the number of files you upload. In other words, every time you upload a file, you will be charged for one request, and not for the size of the file.
+
+<Callout type="info">
+  If you purchase the `Turbo` plan, then you get 100GB of storage, so that is 100 upload requests limit.
+
+</Callout>
+
+## Developer API
+
+I'm happy to announce that you can build your own file storage on top of stashblob, and this feature will be released on December 10th, 2023.
+
+### Example
+
+{/* I need to show the typescript icon */}
+
+```tsx {2,5} copy filename="pages/index.tsx"
+// Next.js14 Pages Router
+import { uploadComponent } from "stashblob-ui";
+
+export default function Home() {
+  return <uploadComponent />;
+}
+```
+
+<Callout type="warning">
+  It is required for you to use this project from scratch. This means you can't
+  integrate it with your existing nextjs project.
+</Callout>
+
+## File Upload Progress Bar
+
+A progress bar has been added instead of the previous push notification method we used before, this way you would know that the file is uploading, and what percentage of completion you're at.
+
+### That's a wrap!
+
+![ByeGif](https://media0.giphy.com/media/42D3CxaINsAFemFuId/giphy.gif?cid=ecf05e47jufxulx783dkjn9alb5osgmpj3cymwy17txtq1q1&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+
+That's all for now, I hope you enjoy using stashblob, and if you have any questions, please feel free to reach out to me on [Twitter](https://twitter.com/timi_networks).
+
+</div>
+</div>
+</main>
