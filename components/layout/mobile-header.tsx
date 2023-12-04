@@ -20,7 +20,7 @@ export function MobileHeader() {
         </SheetTrigger>
         <SheetContent
           side={"left"}
-          className="bg-bgon border border-r-white/20"
+          className="bg-bgon border border-transparent border-r-white/20"
         >
           <SheetHeader>
             <SheetTitle className="text-white font-Nunito text-2xl">
@@ -46,6 +46,12 @@ export function MobileHeader() {
               className="text-xl font-medium font-Nunito text-white"
             >
               Docs
+            </Link>
+            <Link
+              href="/blog"
+              className="text-xl font-medium font-Nunito text-white"
+            >
+              Blog
             </Link>
           </nav>
         </SheetContent>
