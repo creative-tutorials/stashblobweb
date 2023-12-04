@@ -81,10 +81,10 @@ export default function Home() {
             id="overview"
           >
             <hgroup className="flex flex-col gap-3">
-              <h1 className="font-Nunito md:text-8xl lg:text-8xl text-5xl font-[900] text-white">
+              <h1 className="font-Nunito md:text-8xl lg:text-8xl text-5xl font-[900] dark:text-white text-bgon">
                 File Uploads made easy
               </h1>
-              <p className="text-doubleAgrey font-medium md:text-2xl lg:text-2xl text-base font-Nunito">
+              <p className="dark:text-doubleAgrey text-greymid font-medium md:text-2xl lg:text-2xl text-base font-Nunito">
                 StashBlob is a simple, easy to use file upload solution for your
                 files
               </p>
@@ -101,7 +101,7 @@ export default function Home() {
             <div className="flex md:flex-row-reverse lg:flex-row-reverse flex-col items-center justify-between md:gap-8 lg:gap-8 gap-8">
               <div className="w-full h-full">
                 <Image
-                  src="/assets/File Organize.png"
+                  src="/assets/File Organize v2.png"
                   width={500}
                   height={500}
                   alt="App"
@@ -111,10 +111,10 @@ export default function Home() {
                 />
               </div>
               <hgroup className="flex flex-col gap-8">
-                <h3 className="text-white font-Nunito font-bold md:text-5xl lg:text-5xl text-3xl">
+                <h3 className="dark:text-white text-bgon font-Nunito font-bold md:text-5xl lg:text-5xl text-3xl">
                   Free Cloud Storage for your files
                 </h3>
-                <p className="text-white text-xl">
+                <p className="dark:text-white text-greymid text-xl">
                   Securely store and manage your files with end-to-end
                   encryption cloud storage.
                 </p>

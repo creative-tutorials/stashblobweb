@@ -2,36 +2,46 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { MobileHeader } from "./mobile-header";
+import LightLogo from "@/public/assets/TransparentBlob White.png";
+import DarkLogo from "@/public/assets/TransparentBlob Color.png";
 
 export function Header() {
   return (
-    <header className="fixed top-0 w-full md:px-24 lg:px-24 p-4 flex items-stretch justify-between z-10 bg-bgon/50 backdrop-blur-md">
+    <header className="fixed top-0 w-full md:px-24 lg:px-24 p-4 flex items-stretch justify-between z-10 dark:bg-bgon/50 bg-midwhite/50 backdrop-blur-md">
       <div className="flex items-stretch gap-8">
         <Link href="/">
           <Image
-            src="/assets/TransparentBlob White.png"
+            src={LightLogo}
             width={200}
             height={200}
             alt="App"
+            className="hidden dark:block"
+          />
+          <Image
+            src={DarkLogo}
+            width={200}
+            height={200}
+            alt="App"
+            className="block dark:hidden"
           />
         </Link>
       </div>
       <nav className="hidden items-center gap-6 md:flex lg:flex">
         <Link
           href="/pricing"
-          className="text-white transition-colors hover:text-purple font-normal text-lg"
+          className="dark:text-white text-boxicard transition-colors hover:dark:text-purple hover:text-purple font-medium text-lg"
         >
           Pricing
         </Link>
         <Link
           href="/docs"
-          className="text-white transition-colors hover:text-purple font-normal text-lg"
+          className="dark:text-white text-boxicard transition-colors hover:dark:text-purple hover:text-purple font-medium text-lg"
         >
           Docs
         </Link>
         <Link
           href="/blog"
-          className="text-white transition-colors hover:text-purple font-normal text-lg"
+          className="dark:text-white text-boxicard transition-colors hover:dark:text-purple hover:text-purple font-medium text-lg"
         >
           Blog
         </Link>

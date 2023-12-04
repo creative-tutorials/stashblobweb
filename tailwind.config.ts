@@ -19,6 +19,7 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       white: "#ffffff",
+      whitebg: "#f7f7f8",
       midwhite: "#e6e6e6",
       whitehub: "#f3f3f3",
       orange: "#fe7b11",

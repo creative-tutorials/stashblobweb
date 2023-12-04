@@ -1,5 +1,5 @@
 export default {
-  footer: <p>Copyright 2023 © StashBlob.</p>,
+  footer: <p>&copy; 2023 StashBlob. All rights reserved.</p>,
   head: ({ title, meta }) => (
     <>
     
@@ -12,7 +12,7 @@ export default {
   ),
   readMore: "Read More →",
   postFooter: null,
-  darkMode: false,
+  darkMode: true,
   navs: [
     {
       url: "/",

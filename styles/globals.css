@@ -23,11 +23,12 @@
   scroll-behavior: smooth;
 }
 body {
-  background: #0d0d13;
+  /* background: #0d0d13; */
+  @apply dark:bg-bgon bg-whitebg
   /* color: #141518; */
 }
 
 li {
   /* list-style: initial; */
-  list-style: inside;
+  /* list-style: inside; */
 }

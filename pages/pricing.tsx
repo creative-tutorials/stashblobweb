@@ -102,27 +102,27 @@ export default function Pricing() {
         <div className="md:p-8 lg:p-8 p-4 flex flex-col gap-40 md:px-24 lg:px-24 mt-20">
           <section className="" id="pricing">
             <hgroup className="flex flex-col text-center gap-3 items-center justify-center">
-              <h2 className="md:text-5xl lg:text-5xl text-3xl text-white font-Nunito font-bold">
+              <h2 className="md:text-5xl lg:text-5xl text-3xl dark:text-white text-blackmid font-Nunito font-bold">
                 Choose a Plan that Fits Your Needs
               </h2>
-              <p className="text-doubleAgrey font-medium font-Nunito md:text-base lg:text-base text-sm">
+              <p className="dark:text-doubleAgrey text-greymid font-medium font-Nunito md:text-base lg:text-base text-sm">
                 Don&apos;t worry about your bill, worry about your storage.
               </p>
             </hgroup>
             <section className="flex md:flex-row lg:flex-row flex-col gap-5 items-stretch mt-8">
-              <div className="flex flex-col gap-6 w-full rounded-3xl bg-gradient-to-r from-bgon to-midwhite/5 border border-white/20 shadow-lg p-8">
+              <div className="flex flex-col gap-6 w-full rounded-3xl bg-gradient-to-r dark:from-bgon dark:to-midwhite/5 from-white to-whitehub border dark:border-white/20 border-greymid/30 shadow-lg p-8">
                 <hgroup className="flex flex-col gap-2">
-                  <h3 className="x font-medium text-3xl font-Nunito text-white">
+                  <h3 className="text-3xl font-bold font-Nunito dark:text-white text-blackmid">
                     Basic
                   </h3>
-                  <span className="text-lg text-doubleAgrey font-medium font-Nunito">
+                  <span className="text-lg dark:text-doubleAgrey text-[#5f6a75] font-medium font-Nunito">
                     For Personal use
                   </span>
                 </hgroup>
                 <hgroup>
-                  <h2 className="text-6xl font-bold font-Nunito text-white flex items-baseline">
+                  <h2 className="text-6xl font-bold font-Nunito dark:text-white text-blackmid flex items-baseline">
                     $0{" "}
-                    <span className="text-base font-normal text-doubleAgrey">
+                    <span className="text-base font-normal dark:text-doubleAgrey text-[#5f6a75]">
                       /month
                     </span>
                   </h2>
@@ -139,23 +139,26 @@ export default function Pricing() {
                   </Link>
                 </div>
                 <hgroup>
-                  <span className="x text-doubleAgrey font-Nunito font-medium">
+                  <span className="dark:text-doubleAgrey text-[#5f6a75] font-Nunito font-medium">
                     Get started with:
                   </span>
                 </hgroup>
                 <hgroup className="mt-4 flex flex-col gap-5">
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-purple" /> 2GB Cloud Storage
+                  <p className="text-lg font-Nunito dark:text-white text-[#5f6a75] font-medium flex items-center gap-2">
+                    <Check className="dark:text-purple text-btnbghover" /> 2GB
+                    Cloud Storage
                   </p>
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-purple" /> Image Optimization
+                  <p className="text-lg font-Nunito dark:text-white text-[#5f6a75] font-medium flex items-center gap-2">
+                    <Check className="dark:text-purple text-btnbghover" /> Image
+                    Optimization
                   </p>
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-purple" /> Unlimited File Sharing
+                  <p className="text-lg font-Nunito dark:text-white text-[#5f6a75] font-medium flex items-center gap-2">
+                    <Check className="dark:text-purple text-btnbghover" />{" "}
+                    Unlimited File Sharing
                   </p>
                 </hgroup>
               </div>
-              <div className="flex flex-col gap-6 w-full rounded-3xl bg-gradient-to-r from-bgon to-midwhite/5 border-2 border-purple shadow-lg p-8 relative">
+              <div className="flex flex-col gap-6 w-full rounded-3xl bg-gradient-to-r dark:from-bgon dark:to-midwhite/5 from-white to-whitehub border-[3px] border-purple shadow-lg p-8 relative">
                 <div className="flex items-end justify-end">
                   <span
                     id="tag"
@@ -167,17 +170,17 @@ export default function Pricing() {
                   </span>
                 </div>
                 <hgroup className="flex flex-col gap-2">
-                  <h3 className="font-medium text-3xl font-Nunito text-white">
+                  <h3 className="text-3xl font-bold font-Nunito dark:text-white text-blackmid">
                     Turbo
                   </h3>
-                  <span className="text-lg text-doubleAgrey font-medium font-Nunito">
+                  <span className="text-lg dark:text-doubleAgrey text-[#5f6a75] font-medium font-Nunito">
                     For Professional use
                   </span>
                 </hgroup>
                 <hgroup>
-                  <h2 className="text-6xl font-bold font-Nunito text-white flex items-baseline">
+                  <h2 className="text-6xl font-bold font-Nunito dark:text-white text-blackmid flex items-baseline">
                     $10{" "}
-                    <span className="text-base font-normal text-doubleAgrey">
+                    <span className="text-base font-normal dark:text-doubleAgrey text-[#5f6a75]">
                       /month
                     </span>
                   </h2>
@@ -194,34 +197,37 @@ export default function Pricing() {
                   </Link>
                 </div>
                 <hgroup>
-                  <span className="x text-doubleAgrey font-Nunito font-medium">
+                  <span className="dark:text-doubleAgrey text-[#5f6a75] font-Nunito font-medium">
                     Everything in basic plus:
                   </span>
                 </hgroup>
                 <hgroup className="mt-4 flex flex-col gap-5">
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-purple" /> 100GB Cloud Storage
+                  <p className="text-lg font-Nunito dark:text-white text-[#5f6a75] font-medium flex items-center gap-2">
+                    <Check className="dark:text-purple text-btnbghover" /> 100GB
+                    Cloud Storage
                   </p>
 
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-purple" /> Video Optimization
+                  <p className="text-lg font-Nunito dark:text-white text-[#5f6a75] font-medium flex items-center gap-2">
+                    <Check className="dark:text-purple text-btnbghover" /> Video
+                    Optimization
                   </p>
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-purple" /> Developer API
+                  <p className="text-lg font-Nunito dark:text-white text-[#5f6a75] font-medium flex items-center gap-2">
+                    <Check className="dark:text-purple text-btnbghover" />{" "}
+                    Developer API
                   </p>
                 </hgroup>
               </div>
-              <div className="flex flex-col gap-6 w-full rounded-3xl bg-gradient-to-r from-bgon to-midwhite/5 border border-white/20 shadow-lg p-8">
+              <div className="flex flex-col gap-6 w-full rounded-3xl bg-gradient-to-r dark:from-bgon dark:to-midwhite/5 from-white to-whitehub border dark:border-white/20 border-greymid/30 shadow-lg p-8">
                 <hgroup className="flex flex-col gap-2">
-                  <h3 className="x font-medium text-3xl font-Nunito text-white">
+                  <h3 className="text-3xl font-bold font-Nunito dark:text-white text-blackmid">
                     Unlimited
                   </h3>
-                  <span className="text-lg text-doubleAgrey font-medium font-Nunito">
+                  <span className="text-lg dark:text-doubleAgrey text-[#5f6a75] font-medium font-Nunito">
                     For Enterprise use
                   </span>
                 </hgroup>
                 <hgroup>
-                  <h2 className="text-6xl font-bold font-Nunito text-white flex items-baseline">
+                  <h2 className="text-6xl font-bold font-Nunito dark:text-white text-blackmid flex items-baseline">
                     Custom{" "}
                   </h2>
                 </hgroup>
@@ -237,20 +243,23 @@ export default function Pricing() {
                   </Link>
                 </div>
                 <hgroup>
-                  <span className="x text-doubleAgrey font-Nunito font-medium">
+                  <span className="dark:text-doubleAgrey text-[#5f6a75] font-Nunito font-medium">
                     Everything in turbo plus:
                   </span>
                 </hgroup>
                 <hgroup className="mt-4 flex flex-col gap-5">
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-purple" /> Unlimited storage
+                  <p className="text-lg font-Nunito dark:text-white text-[#5f6a75] font-medium flex items-center gap-2">
+                    <Check className="dark:text-purple text-btnbghover" />{" "}
+                    Unlimited storage
                   </p>
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-purple" /> Backup drive
+                  <p className="text-lg font-Nunito dark:text-white text-[#5f6a75] font-medium flex items-center gap-2">
+                    <Check className="dark:text-purple text-btnbghover" />{" "}
+                    Backup drive
                   </p>
 
-                  <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-                    <Check className="text-purple" /> Version history
+                  <p className="text-lg font-Nunito dark:text-white text-[#5f6a75] font-medium flex items-center gap-2">
+                    <Check className="dark:text-purple text-btnbghover" />{" "}
+                    Version history
                   </p>
                 </hgroup>
               </div>
@@ -261,174 +270,4 @@ export default function Pricing() {
       </main>
     </>
   );
-}
-{
-  /* <section className="" id="pricing">
-<hgroup className="flex flex-col text-center gap-3 items-center justify-center">
-  <h2 className="md:text-5xl lg:text-5xl text-3xl text-white font-Nunito font-bold">
-    Choose a Plan that Fits Your Needs
-  </h2>
-  <p className="text-doubleAgrey font-medium font-Nunito md:text-base lg:text-base text-sm">
-    We offer a variety of pricing plans to cater to your unique
-    requirements. Whether you’re an individual large cooperation or
-    a startup, <br /> we have flexible options to suit your
-    financial journey. Select the plan that aligns with your goals
-    and start your path to success.
-  </p>
-</hgroup>
-<section className="flex md:flex-row lg:flex-row flex-col gap-5 items-stretch mt-8">
-  <div className="flex flex-col gap-6 w-full rounded-3xl bg-gradient-to-r from-bgon to-midwhite/5 border border-white/20 shadow-lg p-8">
-    <hgroup className="flex flex-col gap-2">
-      <h3 className="x font-medium text-3xl font-Nunito text-white">
-        Basic
-      </h3>
-      <span className="text-lg text-doubleAgrey font-medium font-Nunito">
-        For Personal use
-      </span>
-    </hgroup>
-    <hgroup>
-      <h2 className="text-6xl font-bold font-Nunito text-white flex items-baseline">
-        $0{" "}
-        <span className="text-base font-normal text-doubleAgrey">
-          /month
-        </span>
-      </h2>
-    </hgroup>
-    <div className="flex items-center justify-center w-full">
-      <Link
-        href="https://stashblob.vercel.app/"
-        className="w-full"
-        target="_blank"
-      >
-        <Button className="w-full p-7 text-lg font-Nunito font-bold bg-purple hover:bg-btnbghover text-white scale-100 transition-all hover:scale-95">
-          Get Started
-        </Button>
-      </Link>
-    </div>
-    <hgroup>
-      <span className="x text-doubleAgrey font-Nunito font-medium">
-        Get started with:
-      </span>
-    </hgroup>
-    <hgroup className="mt-4 flex flex-col gap-5">
-      <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-        <Check className="text-purple" /> 2GB Cloud Storage
-      </p>
-      <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-        <Check className="text-purple" /> Image Optimization
-      </p>
-      <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-        <Check className="text-purple" /> Send up to 50 emails
-      </p>
-      <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-        <Check className="text-purple" /> File Sharing
-      </p>
-    </hgroup>
-  </div>
-  <div className="flex flex-col gap-6 w-full rounded-3xl bg-gradient-to-r from-bgon to-midwhite/5 border-2 border-purple shadow-lg p-8 relative">
-    <div className="flex items-end justify-end">
-      <span
-        id="tag"
-        className="text-center bg-[#d6cbff] rounded-full w-20 p-1 absolute top-10"
-      >
-        <p className="font-Nunito text-[#2b03b2] text-sm font-bold">
-          Timi&apos;s Fav
-        </p>
-      </span>
-    </div>
-    <hgroup className="flex flex-col gap-2">
-      <h3 className="font-medium text-3xl font-Nunito text-white">
-        Turbo
-      </h3>
-      <span className="text-lg text-doubleAgrey font-medium font-Nunito">
-        For Professional use
-      </span>
-    </hgroup>
-    <hgroup>
-      <h2 className="text-6xl font-bold font-Nunito text-white flex items-baseline">
-        $10{" "}
-        <span className="text-base font-normal text-doubleAgrey">
-          /month
-        </span>
-      </h2>
-    </hgroup>
-    <div className="flex items-center justify-center w-full">
-      <Link
-        href="https://timilab.lemonsqueezy.com/checkout/buy/47120f93-803e-435d-89bd-441482dca0e8"
-        className="w-full"
-        target="_blank"
-      >
-        <Button className="w-full p-7 text-lg font-Nunito font-bold bg-purple hover:bg-btnbghover text-white scale-100 transition-all hover:scale-95">
-          Upgrade now
-        </Button>
-      </Link>
-    </div>
-    <hgroup>
-      <span className="x text-doubleAgrey font-Nunito font-medium">
-        Everything in basic plus:
-      </span>
-    </hgroup>
-    <hgroup className="mt-4 flex flex-col gap-5">
-      <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-        <Check className="text-purple" /> 100GB Cloud Storage
-      </p>
-
-      <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-        <Check className="text-purple" /> Fast Video Rendering
-      </p>
-      <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-        <Check className="text-purple" /> Send up to 1K emails
-      </p>
-      <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-        <Check className="text-purple" /> Developer API
-      </p>
-    </hgroup>
-  </div>
-  <div className="flex flex-col gap-6 w-full rounded-3xl bg-gradient-to-r from-bgon to-midwhite/5 border border-white/20 shadow-lg p-8">
-    <hgroup className="flex flex-col gap-2">
-      <h3 className="x font-medium text-3xl font-Nunito text-white">
-        Unlimited
-      </h3>
-      <span className="text-lg text-doubleAgrey font-medium font-Nunito">
-        For Enterprise use
-      </span>
-    </hgroup>
-    <hgroup>
-      <h2 className="text-6xl font-bold font-Nunito text-white flex items-baseline">
-        Custom{" "}
-      </h2>
-    </hgroup>
-    <div className="flex items-center justify-center w-full">
-      <Link
-        href="https://cal.com/timidev/stashblob"
-        className="w-full"
-        target="_blank"
-      >
-        <Button className="w-full p-7 text-lg font-Nunito font-bold bg-purple hover:bg-btnbghover text-white scale-100 transition-all hover:scale-95">
-          Schedule call
-        </Button>
-      </Link>
-    </div>
-    <hgroup>
-      <span className="x text-doubleAgrey font-Nunito font-medium">
-        Everything in turbo plus:
-      </span>
-    </hgroup>
-    <hgroup className="mt-4 flex flex-col gap-5">
-      <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-        <Check className="text-purple" /> Unlimited storage
-      </p>
-      <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-        <Check className="text-purple" /> Backup drive
-      </p>
-      <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-        <Check className="text-purple" /> Send unlimited emails
-      </p>
-      <p className="text-lg font-Nunito text-white font-medium flex items-center gap-2">
-        <Check className="text-purple" /> Team support
-      </p>
-    </hgroup>
-  </div>
-</section>
-</section> */
 }
