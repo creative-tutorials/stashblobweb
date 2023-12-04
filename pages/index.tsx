@@ -35,7 +35,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/derbreilm/image/upload/v1700921113/Site_Rollup_pk7dop.jpg"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1701692680/Site_Banner_xivy5x.jpg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -51,7 +51,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/derbreilm/image/upload/v1700921113/Site_Rollup_pk7dop.jpg"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1701692680/Site_Banner_xivy5x.jpg"
         />
 
         <link

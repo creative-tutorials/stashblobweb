@@ -5,30 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import {
-  Check,
-  Twitter,
-  Menu,
-  Zap,
-  ShieldCheck,
-  FolderSearch2,
-  BellRing,
-  ImagePlus,
-  Github,
-  Share2,
-  ExternalLink as ExtLink,
-} from "lucide-react";
-
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Check } from "lucide-react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -59,7 +36,7 @@ export default function Pricing() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/derbreilm/image/upload/v1700921113/Site_Rollup_pk7dop.jpg"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1701692680/Site_Banner_xivy5x.jpg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -75,7 +52,7 @@ export default function Pricing() {
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/derbreilm/image/upload/v1700921113/Site_Rollup_pk7dop.jpg"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1701692680/Site_Banner_xivy5x.jpg"
         />
 
         <link
