@@ -13,15 +13,9 @@ export default function Pricing() {
   return (
     <>
       <Head>
-        <title>StashBlob</title>
-        <meta
-          name="description"
-          content="Easy way to share files with anyone without any hicups. Just upload and share."
-        />
-        <meta
-          name="keywords"
-          content="Cloud Storage, File Sharing, Storage Bucket, Dropbox, StashBlob"
-        />
+        <title>Pricing - StashBlob</title>
+        <meta name="description" content="Pricing your way" />
+        <meta name="keywords" content="Pricing, StashBlob" />
         <meta
           name="google-site-verification"
           content="l1a2fyP4jz21WqSIR2HNxLAyt__hUNkV-48f_zbVHYE"
@@ -29,11 +23,8 @@ export default function Pricing() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:url" content="https://stashblobweb.vercel.app" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="StashBlob" />
-        <meta
-          property="og:description"
-          content="Easy way to share files with anyone without any hicups. Just upload and share."
-        />
+        <meta property="og:title" content="Pricing - StashBlob" />
+        <meta property="og:description" content="Pricing your way" />
         <meta
           property="og:image"
           content="https://res.cloudinary.com/derbreilm/image/upload/v1701692680/Site_Banner_xivy5x.jpg"
@@ -45,11 +36,8 @@ export default function Pricing() {
           property="twitter:url"
           content="https://stashblobweb.vercel.app"
         />
-        <meta name="twitter:title" content="StashBlob" />
-        <meta
-          name="twitter:description"
-          content="Easy way to share files with anyone without any hicups. Just upload and share."
-        />
+        <meta name="twitter:title" content="Pricing - StashBlob" />
+        <meta name="twitter:description" content="Pricing your way" />
         <meta
           name="twitter:image"
           content="https://res.cloudinary.com/derbreilm/image/upload/v1701692680/Site_Banner_xivy5x.jpg"
